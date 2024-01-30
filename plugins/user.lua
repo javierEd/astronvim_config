@@ -9,4 +9,18 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "akinsho/pubspec-assist.nvim",
+    dependencies = "plenary.nvim",
+    config = function() require("pubspec-assist").setup {} end,
+  },
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    opts = {
+      window = {
+        position = "right",
+      },
+    },
+  },
+  { "projectfluent/fluent.vim" },
 }

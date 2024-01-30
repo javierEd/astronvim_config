@@ -1,12 +1,21 @@
+vim.cmd "let &colorcolumn = 120"
+
+vim.cmd "let g:neovide_cursor_animation_length=0.1"
+vim.cmd "let g:neovide_cursor_trail_size=0.5"
+vim.cmd 'let g:neovide_cursor_vfx_mode="railgun"'
+vim.cmd "let g:neovide_cursor_antialiasing=v:true"
+
 -- set vim options here (vim.<first_key>.<second_key> = value)
 return {
   opt = {
     -- set to true or false etc.
-    relativenumber = true, -- sets vim.opt.relativenumber
+    relativenumber = false, -- sets vim.opt.relativenumber
     number = true, -- sets vim.opt.number
-    spell = false, -- sets vim.opt.spell
+    spell = true, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
+    guifont = "FiraCode Nerd Font:h12",
+    spelllang = { "en" },
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
